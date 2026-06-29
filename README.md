@@ -1,2 +1,2 @@
 # Proyecto-Podman-Calibre-Web
-Hola profesor Marks, como esta?
+Hola profesor Marks, este es nuestro proyecto de Calibre_web con podman. Esperemos no pueda poner buena nota por el esfuerzo. 
