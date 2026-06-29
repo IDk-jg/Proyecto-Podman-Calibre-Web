@@ -1,0 +1,402 @@
+[2026-06-20 19:51:56,284]  WARN {config_sql.py:365} Log path /config/calibre-web.log not valid, falling back to default
+[2026-06-20 19:51:56,304]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 19:51:59,210]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 19:51:59,319]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-20 19:52:00,491]  WARN {config_sql.py:401} invalidating configuration
+[2026-06-20 19:52:00,491]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 19:52:00,499]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-20 19:52:01,018]  INFO {base.py:214} Scheduler started
+[2026-06-20 19:52:01,018]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-20 19:52:01,019]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-20 19:52:01,019]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-20 19:52:01,020]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-20 19:52:01 UTC], next run at: 2026-06-20 19:52:01 UTC)" (scheduled at 2026-06-20 19:52:01.019544+00:00)
+[2026-06-20 19:52:01,020]  INFO {base.py:728} Removed job bfa9f6ea4f054646a4bd7d72609dad19
+[2026-06-20 19:52:01,023]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-20 19:52:01 UTC], next run at: 2026-06-20 19:52:01 UTC)" executed successfully
+[2026-06-20 19:52:01,841]  INFO {ub.py:764} github Blueprint Created
+[2026-06-20 19:52:01,849]  INFO {ub.py:764} google Blueprint Created
+[2026-06-20 19:52:07,008]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-20 21:10:41,782]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 21:10:41,801]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 21:10:54,525]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 21:11:44,294]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 21:54:40,522]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 22:21:36,818]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 22:21:36,820]  INFO {server.py:331} webserver stop (restart=True)
+[2026-06-20 22:21:36,821]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-20 22:21:36,969]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 22:21:37,841]  INFO {server.py:313} Performing restart of Calibre-Web
+[2026-06-20 22:21:40,801]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 22:21:40,929]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-20 22:21:42,087]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-20 22:21:42,694]  INFO {base.py:214} Scheduler started
+[2026-06-20 22:21:42,695]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-20 22:21:42,696]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-20 22:21:42,696]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-20 22:21:42,696]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-20 22:21:42 UTC], next run at: 2026-06-20 22:21:42 UTC)" (scheduled at 2026-06-20 22:21:42.696228+00:00)
+[2026-06-20 22:21:42,697]  INFO {base.py:728} Removed job 3036c278c8f74db1b19148eae3a75103
+[2026-06-20 22:21:42,699]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-20 22:21:42 UTC], next run at: 2026-06-20 22:21:42 UTC)" executed successfully
+[2026-06-20 22:21:46,594]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-20 22:22:43,697] ERROR {logger.py:48} Database error: (sqlite3.OperationalError) attempt to write a readonly database
+[SQL: INSERT INTO authors (name, sort, link) VALUES (?, ?, ?)]
+[parameters: ('Alessandra Tenorio', 'Tenorio, Alessandra', '')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: attempt to write a readonly database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/calibre-web/cps/editbooks.py", line 121, in upload
+    db_book, input_authors, title_dir = create_book_on_upload(modify_date, meta)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/calibre-web/cps/editbooks.py", line 884, in create_book_on_upload
+    sort_authors, input_authors, db_author = prepare_authors_on_upload(title, authr)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/calibre-web/cps/editbooks.py", line 870, in prepare_authors_on_upload
+    calibre_db.session.commit()
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2034, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1315, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1290, in _prepare_impl
+    self.session.flush()
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 465, in execute
+    rec.execute(self)
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/lsiopy/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) attempt to write a readonly database
+[SQL: INSERT INTO authors (name, sort, link) VALUES (?, ?, ?)]
+[parameters: ('Alessandra Tenorio', 'Tenorio, Alessandra', '')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2026-06-20 22:35:21,826]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-20 22:35:21,828]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-20 22:35:21,829]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-20 22:36:49,031]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 22:36:49,145]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-20 22:36:50,134]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-20 22:36:50,636]  INFO {base.py:214} Scheduler started
+[2026-06-20 22:36:50,637]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-20 22:36:50,638]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-20 22:36:50,638]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-20 22:36:50,638]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-20 22:36:50 UTC], next run at: 2026-06-20 22:36:50 UTC)" (scheduled at 2026-06-20 22:36:50.638286+00:00)
+[2026-06-20 22:36:50,639]  INFO {base.py:728} Removed job ee43db7a2915430bb9364360554cc18d
+[2026-06-20 22:36:50,703]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-20 22:36:50 UTC], next run at: 2026-06-20 22:36:50 UTC)" executed successfully
+[2026-06-20 22:36:54,425]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-20 22:37:22,523]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-20 22:37:22,526]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-20 22:37:22,527]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-20 22:37:29,305]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 22:37:29,384]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-20 22:37:30,272]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-20 22:37:30,676]  INFO {base.py:214} Scheduler started
+[2026-06-20 22:37:30,677]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-20 22:37:30,677]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-20 22:37:30,678]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-20 22:37:30,678]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-20 22:37:30 UTC], next run at: 2026-06-20 22:37:30 UTC)" (scheduled at 2026-06-20 22:37:30.677880+00:00)
+[2026-06-20 22:37:30,679]  INFO {base.py:728} Removed job 0e26778d22f0476db3b9bc96337f7dcf
+[2026-06-20 22:37:30,701]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-20 22:37:30 UTC], next run at: 2026-06-20 22:37:30 UTC)" executed successfully
+[2026-06-20 22:37:34,184]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-20 22:40:56,657]  INFO {web.py:1206} Serving book: 'LECTURA ADICIONAL_EC2_Ensayo - Alessandra Tenorio' to admin - ::ffff:179.6.138.24
+[2026-06-20 22:53:11,032]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-20 22:53:11,033]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-20 22:53:11,035]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-20 23:01:26,789]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-20 23:01:26,898]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-20 23:01:27,950]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-20 23:01:28,511]  INFO {base.py:214} Scheduler started
+[2026-06-20 23:01:28,512]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-20 23:01:28,513]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-20 23:01:28,513]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-20 23:01:28,513]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-20 23:01:28 UTC], next run at: 2026-06-20 23:01:28 UTC)" (scheduled at 2026-06-20 23:01:28.513309+00:00)
+[2026-06-20 23:01:28,514]  INFO {base.py:728} Removed job fd95a06c5d2e4539a4125ff9e9f196e2
+[2026-06-20 23:01:28,515]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-20 23:01:28 UTC], next run at: 2026-06-20 23:01:28 UTC)" executed successfully
+[2026-06-20 23:01:32,124]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-20 23:06:07,615]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-20 23:06:07,616]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-20 23:06:08,621]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-22 01:12:20,488]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-22 01:12:20,609]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-22 01:12:21,725]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-22 01:12:22,313]  INFO {base.py:214} Scheduler started
+[2026-06-22 01:12:22,314]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-22 01:12:22,314]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-22 01:12:22,314]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-22 01:12:22,315]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-22 01:12:22 UTC], next run at: 2026-06-22 01:12:22 UTC)" (scheduled at 2026-06-22 01:12:22.314621+00:00)
+[2026-06-22 01:12:22,315]  INFO {base.py:728} Removed job d333143060484068a4fe4a3bbd13afde
+[2026-06-22 01:12:22,317]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-22 01:12:22 UTC], next run at: 2026-06-22 01:12:22 UTC)" executed successfully
+[2026-06-22 01:12:26,078]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-22 01:36:35,403]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-22 01:36:35,414]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-22 01:36:35,383]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-22 01:36:36,460] ERROR {server.py:299} Error starting server: Scheduler is not running
+[2026-06-22 01:36:36,460]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-22 15:08:26,764]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-22 15:08:26,876]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-22 15:08:27,982]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-22 15:08:28,560]  INFO {base.py:214} Scheduler started
+[2026-06-22 15:08:28,561]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-22 15:08:28,561]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-22 15:08:28,562]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-22 15:08:28,562]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-22 15:08:28 UTC], next run at: 2026-06-22 15:08:28 UTC)" (scheduled at 2026-06-22 15:08:28.562038+00:00)
+[2026-06-22 15:08:28,563]  INFO {base.py:728} Removed job 20d07f08cec74e7fa0b12f0b1e03078d
+[2026-06-22 15:08:28,584]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-22 15:08:28 UTC], next run at: 2026-06-22 15:08:28 UTC)" executed successfully
+[2026-06-22 15:08:32,191]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-22 15:14:55,693]  INFO {web.py:1206} Serving book: 'LECTURA ADICIONAL_EC2_Ensayo - Alessandra Tenorio' to admin - ::ffff:181.176.105.238
+[2026-06-22 15:25:16,585]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-22 15:25:16,586]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-22 15:25:16,587]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-22 15:26:12,405]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-22 15:26:12,522]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-22 15:26:13,473]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-22 15:26:13,900]  INFO {base.py:214} Scheduler started
+[2026-06-22 15:26:13,900]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-22 15:26:13,901]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-22 15:26:13,901]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-22 15:26:13,902]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-22 15:26:13 UTC], next run at: 2026-06-22 15:26:13 UTC)" (scheduled at 2026-06-22 15:26:13.901539+00:00)
+[2026-06-22 15:26:13,902]  INFO {base.py:728} Removed job e8ceae89b30245708ec7186521b05b3f
+[2026-06-22 15:26:13,967]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-22 15:26:13 UTC], next run at: 2026-06-22 15:26:13 UTC)" executed successfully
+[2026-06-22 15:26:17,478]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-22 15:31:06,689]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-22 15:31:06,692]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-22 15:31:06,693]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-25 20:01:17,061]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-25 20:01:17,174]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-25 20:01:18,266]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-25 20:01:18,796]  INFO {base.py:214} Scheduler started
+[2026-06-25 20:01:18,797]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-25 20:01:18,797]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-25 20:01:18,798]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-25 20:01:18,798]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-25 20:01:18 UTC], next run at: 2026-06-25 20:01:18 UTC)" (scheduled at 2026-06-25 20:01:18.797806+00:00)
+[2026-06-25 20:01:18,798]  INFO {base.py:728} Removed job 79362736eae1406797bfb02d919b1276
+[2026-06-25 20:01:18,800]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-25 20:01:18 UTC], next run at: 2026-06-25 20:01:18 UTC)" executed successfully
+[2026-06-25 20:01:22,420]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-25 20:11:31,464]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-25 20:11:31,467]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-25 20:11:32,471]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-25 20:17:49,318]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-25 20:17:49,437]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-25 20:17:50,577]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-25 20:17:51,177]  INFO {base.py:214} Scheduler started
+[2026-06-25 20:17:51,177]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-25 20:17:51,178]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-25 20:17:51,178]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-25 20:17:51,179]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-25 20:17:51 UTC], next run at: 2026-06-25 20:17:51 UTC)" (scheduled at 2026-06-25 20:17:51.178507+00:00)
+[2026-06-25 20:17:51,179]  INFO {base.py:728} Removed job ab3f2305adea4de89a2ddc4ede616b45
+[2026-06-25 20:17:51,181]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-25 20:17:51 UTC], next run at: 2026-06-25 20:17:51 UTC)" executed successfully
+[2026-06-25 20:17:55,112]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-25 20:18:20,322]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-25 20:18:20,324]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-25 20:18:21,329]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-25 22:35:58,150]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-25 22:35:58,263]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-25 22:35:59,369]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-25 22:35:59,882]  INFO {base.py:214} Scheduler started
+[2026-06-25 22:35:59,883]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-25 22:35:59,884]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-25 22:35:59,884]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-25 22:35:59,885]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-25 22:35:59 UTC], next run at: 2026-06-25 22:35:59 UTC)" (scheduled at 2026-06-25 22:35:59.884435+00:00)
+[2026-06-25 22:35:59,885]  INFO {base.py:728} Removed job 06b4cd3983a44c73972abf10c8f671be
+[2026-06-25 22:35:59,906]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-25 22:35:59 UTC], next run at: 2026-06-25 22:35:59 UTC)" executed successfully
+[2026-06-25 22:36:05,157]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-25 23:59:27,334]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-25 23:59:27,337]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-25 23:59:27,338]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-26 03:13:53,445]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-26 03:13:53,553]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-26 03:13:54,651]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-26 03:13:55,239]  INFO {base.py:214} Scheduler started
+[2026-06-26 03:13:55,240]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-26 03:13:55,240]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-26 03:13:55,241]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-26 03:13:55,241]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-26 03:13:55 UTC], next run at: 2026-06-26 03:13:55 UTC)" (scheduled at 2026-06-26 03:13:55.241112+00:00)
+[2026-06-26 03:13:55,241]  INFO {base.py:728} Removed job cfb0ac8319604f18b69cff4a9f5ff2da
+[2026-06-26 03:13:55,243]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-26 03:13:55 UTC], next run at: 2026-06-26 03:13:55 UTC)" executed successfully
+[2026-06-26 03:13:58,929]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-26 04:00:00,007]  INFO {base.py:129} Running job "delete temp (trigger: cron[hour='4'], next run at: 2026-06-27 04:00:00 UTC)" (scheduled at 2026-06-26 04:00:00+00:00)
+[2026-06-26 04:00:00,013]  INFO {base.py:156} Job "delete temp (trigger: cron[hour='4'], next run at: 2026-06-27 04:00:00 UTC)" executed successfully
+[2026-06-26 04:10:00,000]  INFO {base.py:129} Running job "end scheduled task (trigger: cron[hour='4', minute='10'], next run at: 2026-06-27 04:10:00 UTC)" (scheduled at 2026-06-26 04:10:00+00:00)
+[2026-06-26 04:10:00,009]  INFO {base.py:156} Job "end scheduled task (trigger: cron[hour='4', minute='10'], next run at: 2026-06-27 04:10:00 UTC)" executed successfully
+[2026-06-26 04:13:35,289]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-26 04:13:35,290]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-26 04:13:35,291]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-26 12:50:25,213]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-26 12:50:25,329]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-26 12:50:26,423]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-26 12:50:27,011]  INFO {base.py:214} Scheduler started
+[2026-06-26 12:50:27,012]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-26 12:50:27,013]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-26 12:50:27,013]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-26 12:50:27,014]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-26 12:50:27 UTC], next run at: 2026-06-26 12:50:27 UTC)" (scheduled at 2026-06-26 12:50:27.013515+00:00)
+[2026-06-26 12:50:27,014]  INFO {base.py:728} Removed job a1c56a2924154e2f8024a1a66ffb38d5
+[2026-06-26 12:50:27,016]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-26 12:50:27 UTC], next run at: 2026-06-26 12:50:27 UTC)" executed successfully
+[2026-06-26 12:50:30,736]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-27 00:27:41,670] ERROR {pywsgi.py:1349} <gevent._socket3.socket at 0x739097a72e40 object, fd=10, family=10, type=1, proto=0>: (from ('::ffff:8.216.8.168', 27034, 0, 0)) Invalid http version: "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03I\x06²ù¼\x99iÀYûøºe-\x83Ud]\x0e\x8d·b8´gÆÝ9dZ8f gÁ\x81i³öòË°©\x19NÖ½\x95g|püé<Z¡\x90T·é¥8'O;\x00&À+À/À,À0Ì©Ì¨À\tÀ\x13À\n"
+[2026-06-27 03:21:30,811] ERROR {pywsgi.py:1349} <gevent._socket3.socket at 0x739097a73620 object, fd=10, family=10, type=1, proto=0>: (from ('::ffff:160.119.76.31', 39344, 0, 0)) Invalid HTTP method: '\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00'
+[2026-06-27 04:00:00,027]  INFO {base.py:129} Running job "delete temp (trigger: cron[hour='4'], next run at: 2026-06-28 04:00:00 UTC)" (scheduled at 2026-06-27 04:00:00+00:00)
+[2026-06-27 04:00:00,044]  INFO {base.py:156} Job "delete temp (trigger: cron[hour='4'], next run at: 2026-06-28 04:00:00 UTC)" executed successfully
+[2026-06-27 04:10:00,016]  INFO {base.py:129} Running job "end scheduled task (trigger: cron[hour='4', minute='10'], next run at: 2026-06-27 04:10:00 UTC)" (scheduled at 2026-06-27 04:10:00+00:00)
+[2026-06-27 04:10:00,019]  INFO {base.py:156} Job "end scheduled task (trigger: cron[hour='4', minute='10'], next run at: 2026-06-28 04:10:00 UTC)" executed successfully
+[2026-06-27 08:35:48,480] ERROR {pywsgi.py:1349} <gevent._socket3.socket at 0x739097a72e40 object, fd=11, family=10, type=1, proto=0>: (from ('::ffff:160.119.76.31', 34646, 0, 0)) Invalid HTTP method: '\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00'
+[2026-06-27 10:02:45,176] ERROR {pywsgi.py:1349} <gevent._socket3.socket at 0x739097a72e40 object, fd=11, family=10, type=1, proto=0>: (from ('::ffff:47.245.131.237', 37302, 0, 0)) Invalid http version: "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03I\x06²ù¼\x99iÀYûøºe-\x83Ud]\x0e\x8d·b8´gÆÝ9dZ8f gÁ\x81i³öòË°©\x19NÖ½\x95g|püé<Z¡\x90T·é¥8'O;\x00&À+À/À,À0Ì©Ì¨À\tÀ\x13À\n"
+[2026-06-27 11:36:01,844] ERROR {pywsgi.py:1349} <gevent._socket3.socket at 0x739097a72e40 object, fd=11, family=10, type=1, proto=0>: (from ('::ffff:47.237.2.109', 42272, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x01 \x01\x00\x01\x1c\x03\x03ûý\x8aÐñ\x0ehÜ³\x06x]w\x875ªyo\x97\x8b\x13\x1e\x89<:m\x8bCXk¡å U\x02:8F\x9a\x864Ç¨\rþ¡sP\t××\x97t¾\x98\x1a¿;r<~\x81WWã\x002À+À/À,À0Ì©Ì¨À\tÀ\x13À\n'
+[2026-06-27 11:55:18,484] ERROR {pywsgi.py:1349} <gevent._socket3.socket at 0x739096104de0 object, fd=11, family=10, type=1, proto=0>: (from ('::ffff:16.58.56.214', 19366, 0, 0)) Invalid HTTP method: '\n'
+[2026-06-27 11:56:03,746] ERROR {pywsgi.py:1349} <gevent._socket3.socket at 0x739096104d00 object, fd=11, family=10, type=1, proto=0>: (from ('::ffff:16.58.56.214', 13868, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x01\x00\x01\x00\x00ü\x03\x03j\x01[®¦\x7f¶}2C¹¾\x11:ú\x14j\xa0Y\x05\x98ä\x1d/#e\x17\x90êîfC E^(væÔ@-Ö\x04Ã\x9c)yin\x8e\x83\x93ÅÒ·»{RÓ\rðqE\x1eR\x00&Ì¨Ì©À/À0À+À,À\x13À\tÀ\x14À\n'
+[2026-06-27 11:56:33,729] ERROR {pywsgi.py:1349} <gevent._socket3.socket at 0x739096104de0 object, fd=11, family=10, type=1, proto=0>: (from ('::ffff:16.58.56.214', 17372, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03â \x0bdhìÃ(A\x89¡\x01èüG\x8f6·Å\x1dW±\x90\x8e\x0eiI-Æ\x9c\x1e´ ïìö7nNÀ8jFùÞ\x12\x93/¶6ª\x863)²ºûî\\\x88°j1Õ \x00&Ì¨Ì©À/À0À+À,À\x13À\tÀ\x14À\n'
+[2026-06-27 13:56:41,626]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-27 13:56:41,627]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-27 13:56:41,628]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-27 13:57:07,973]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-27 13:57:08,087]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-27 13:57:09,170]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-27 13:57:09,781]  INFO {base.py:214} Scheduler started
+[2026-06-27 13:57:09,782]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-27 13:57:09,782]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-27 13:57:09,782]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-27 13:57:09,783]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-27 13:57:09 UTC], next run at: 2026-06-27 13:57:09 UTC)" (scheduled at 2026-06-27 13:57:09.782811+00:00)
+[2026-06-27 13:57:09,783]  INFO {base.py:728} Removed job f627339a924940acbef9c6e72fcf03dd
+[2026-06-27 13:57:09,785]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-27 13:57:09 UTC], next run at: 2026-06-27 13:57:09 UTC)" executed successfully
+[2026-06-27 13:57:13,571]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-27 13:58:48,352]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-27 13:58:48,354]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-27 13:58:48,355]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-27 20:16:42,366]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-27 20:16:42,477]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-27 20:16:43,559]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-27 20:16:44,127]  INFO {base.py:214} Scheduler started
+[2026-06-27 20:16:44,127]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-27 20:16:44,128]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-27 20:16:44,128]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-27 20:16:44,129]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-27 20:16:44 UTC], next run at: 2026-06-27 20:16:44 UTC)" (scheduled at 2026-06-27 20:16:44.128493+00:00)
+[2026-06-27 20:16:44,129]  INFO {base.py:728} Removed job 1435e14b03c54a56b31d68f66f2b7d71
+[2026-06-27 20:16:44,131]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-27 20:16:44 UTC], next run at: 2026-06-27 20:16:44 UTC)" executed successfully
+[2026-06-27 20:16:47,826]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-27 23:45:39,718]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-27 23:45:39,722]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-27 23:45:39,724]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-28 00:13:17,230]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-28 00:13:17,376]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-28 00:13:18,449]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-28 00:13:19,001]  INFO {base.py:214} Scheduler started
+[2026-06-28 00:13:19,002]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-28 00:13:19,002]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-28 00:13:19,002]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-28 00:13:19,003]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-28 00:13:19 UTC], next run at: 2026-06-28 00:13:19 UTC)" (scheduled at 2026-06-28 00:13:19.002846+00:00)
+[2026-06-28 00:13:19,003]  INFO {base.py:728} Removed job 6fdbfa03948b4e59a35f05979e8201c4
+[2026-06-28 00:13:19,024]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-28 00:13:19 UTC], next run at: 2026-06-28 00:13:19 UTC)" executed successfully
+[2026-06-28 00:13:22,619]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-28 00:14:34,868]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-28 00:14:34,870]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-28 00:14:34,870]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-28 00:17:06,913]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-28 00:17:07,032]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-28 00:17:08,111]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-28 00:17:08,706]  INFO {base.py:214} Scheduler started
+[2026-06-28 00:17:08,707]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-28 00:17:08,707]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-28 00:17:08,708]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-28 00:17:08,708]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-28 00:17:08 UTC], next run at: 2026-06-28 00:17:08 UTC)" (scheduled at 2026-06-28 00:17:08.708008+00:00)
+[2026-06-28 00:17:08,709]  INFO {base.py:728} Removed job 3ead0ed501b940ebbc58358d4ef9a8bb
+[2026-06-28 00:17:08,711]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-28 00:17:08 UTC], next run at: 2026-06-28 00:17:08 UTC)" executed successfully
+[2026-06-28 00:17:12,519]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-28 00:26:06,719] ERROR {extension.py:1082} Skipping limit: 3 per 1 minute. Empty value found in parameters.
+[2026-06-28 00:26:06,719] ERROR {extension.py:1082} Skipping limit: 40 per 1 day. Empty value found in parameters.
+[2026-06-28 00:26:06,723]  WARN {web.py:1457} Login failed for user "" IP-address: ::ffff:181.176.104.190
+[2026-06-28 00:58:34,118]  INFO {server.py:331} webserver stop (restart=False)
+[2026-06-28 00:58:34,124]  INFO {base.py:245} Scheduler has been shut down
+[2026-06-28 00:58:34,127]  INFO {server.py:310} Performing shutdown of Calibre-Web
+[2026-06-29 03:10:23,677]  WARN {config_sql.py:365} Log path  not valid, falling back to default
+[2026-06-29 03:10:23,787]  INFO {__init__.py:184} Starting Calibre Web...
+[2026-06-29 03:10:24,887]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2026-06-29 03:10:25,471]  INFO {base.py:214} Scheduler started
+[2026-06-29 03:10:25,472]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2026-06-29 03:10:25,472]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2026-06-29 03:10:25,472]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2026-06-29 03:10:25,473]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2026-06-29 03:10:25 UTC], next run at: 2026-06-29 03:10:25 UTC)" (scheduled at 2026-06-29 03:10:25.472670+00:00)
+[2026-06-29 03:10:25,473]  INFO {base.py:728} Removed job 288e6d2f38ac4b96b7007457091811f9
+[2026-06-29 03:10:25,475]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2026-06-29 03:10:25 UTC], next run at: 2026-06-29 03:10:25 UTC)" executed successfully
+[2026-06-29 03:10:29,189]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2026-06-29 03:23:30,449]  INFO {admin.py:1947} Missing entries on new user

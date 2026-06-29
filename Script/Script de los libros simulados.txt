@@ -1,0 +1,5 @@
+for i in {1..2500}; do
+  mkdir -p ~/proyecto_calibre/libros/Autor_Simulado_$i/Libro_Simulado_$i
+  echo "Contenido de texto indexado del libro numero $i" > ~/proyecto_calibre/libros/Autor_Simulado_$i/Libro_Simulado_$i/libro_$i.txt
+  echo "Metadatos XML dummy del libro numero $i" > ~/proyecto_calibre/libros/Autor_Simulado_$i/Libro_Simulado_$i/metadata_$i.opf
+done
